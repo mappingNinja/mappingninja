@@ -1,0 +1,44 @@
+section {
+  padding: 40px 0px;
+}
+
+.service-bg {
+  background: #f2efef;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* .grid-item {
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+} */
+
+.service-wrap {
+  position: relative;
+}
+.service-wrap p {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  color: #000000;
+  line-height: 23px;
+  width: 100%;
+}
+.service-wrap h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #021423;
+  margin-top: 17px;
+  font-size: 40px;
+  line-height: 54px;
+  text-transform: capitalize;
+}
