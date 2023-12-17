@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 section {
   padding: 40px 0px;
 }
@@ -41,4 +45,39 @@ section {
   font-size: 40px;
   line-height: 54px;
   text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+}
+
+.product-text {
+  font-size: 42px;
+  color: #012970;
+  font-family: "Nunito", sans-serif;
+}
+
+h4 {
+  font-family: "Nunito", sans-serif;
+  font-size: 42px;
+}
+
+.ccc-block-wrap .ccc-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border: 2px solid #f4f4f4;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.ccc-block-wrap .ccc-block__content {
+  text-align: center;
+  padding: 30px 20px 40px;
 }

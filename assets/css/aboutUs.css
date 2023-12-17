@@ -13,6 +13,10 @@
   transform-origin: top right;
 } */
 
+a {
+  text-decoration: none;
+}
+
 .about-hero {
   position: relative;
   width: 100%;
@@ -136,7 +140,8 @@
 .our_skill_inner .single_skill .progress {
   height: 5px;
   background: #f4f8fc;
-  border-radius: 0px;
+  border-radius: 10px;
+  height: 20px;
   overflow: visible;
 }
 
@@ -146,19 +151,114 @@
     rgba(110, 189, 254, 1) 0%,
     rgba(155, 138, 255, 1) 100%
   );
-  background: linear-gradient(
-    0deg,
-    rgba(110, 189, 254, 1) 0%,
-    rgba(155, 138, 255, 1) 100%
-  );
-  background: linear-gradient(
-    0deg,
-    rgba(110, 189, 254, 1) 0%,
-    rgba(155, 138, 255, 1) 100%
-  );
+
   position: relative;
 }
 
 .our_skill_inner .single_skill:last-child {
   margin-bottom: 0px;
+}
+
+.ccc-block-wrap {
+  padding: 50px 0;
+}
+
+.values .ccc-block-wrap .container {
+  max-width: 1738px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.ccc-block-wrap .ccc-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border: 2px solid #f4f4f4;
+  height: 100%;
+}
+
+.ccc-block-wrap .ccc-block__img {
+  padding: 20px;
+  text-align: center;
+}
+
+.ccc-block-wrap .ccc-block__content {
+  text-align: center;
+  padding: 30px 20px 40px;
+}
+
+.ccc-block-wrap .ccc-block__content .sub-title {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #a7a7a7;
+}
+
+.ccc-block-wrap .ccc-block__content .h2 {
+  padding-bottom: 10px;
+}
+
+.ccc-block-wrap .ccc-block__content span {
+  color: #a7a7a7;
+  display: block;
+  line-height: 1.55;
+}
+
+li {
+  list-style: none;
+}
+
+.values-driven,
+.values {
+  padding: 0px 0px;
+}
+
+.title-wrap {
+  padding-bottom: 30px;
+}
+
+.work-process-item {
+  display: flex;
+}
+
+.work-process-item__icon {
+  width: 126px;
+  flex-shrink: 0;
+  padding-bottom: 36px;
+  padding-left: 28px;
+  padding-top: 20px;
+}
+
+.work-process-item__icon .icon-box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background: #fff;
+  box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.work-process-item__content {
+  width: 100%;
+  padding-left: 40px;
+  font-size: 16px;
+  line-height: 1.6;
+  padding-top: 20px;
+}
+
+.work-process-item__content .h6 {
+  font-weight: bold;
+}
+
+.how-we-work-wrap .work-process-list > ul:not(:last-child) {
+  border-bottom: 2px dashed #bfbfbf;
+}
+
+.how-we-work-wrap .work-process-list > ul > li:not(:last-child) {
+  border-right: 2px dashed #bfbfbf;
 }
