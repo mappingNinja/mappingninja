@@ -48,11 +48,12 @@ if (isset($_POST['sendEmail'])) {
 
     echo "
     <script>
+        alert('Thanks for contacts us! we will get back to you shortly.');
         const protocol = window.location.protocol
         if(protocol && protocol === 'http:'){
-            document.location.href='/mappingninja/#contact';
+            document.location.href='/mappingninja/';
         } else {
-            document.location.href='/#contact';
+            document.location.href='/';
         }
     </script>
     ";
