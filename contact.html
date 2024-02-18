@@ -172,7 +172,7 @@
         </div>
 
         <div class="col-lg-6">
-          <form action="php/sendmail.php" class="php-email-form" method="post">
+          <form action="" role="form" class="php-email-form" method="post">
             <div class="row gy-4">
               <div class="col-md-6">
                 <input type="text" name="name" class="form-control" placeholder="Your Name" required />
@@ -192,9 +192,9 @@
 
               <div class="col-md-12 text-center">
                 <div class="loading">Loading</div>
-                <div class="error-message"></div>
+                <div class="error-message">"Oops! Something went wrong. Please try again later."</div>
                 <div class="sent-message">
-                  Your message has been sent. Thank you!
+                  Thank you for reaching out! We'll get back to you as soon as possible.
                 </div>
 
                 <button type="submit" class="submitForm" name="sendEmail">
@@ -297,6 +297,8 @@
 
   <!-- Custom Js File -->
   <script src="./js/linkHomePage.js"></script>
+  <script src="./js/mailValidate.js"></script>
+
 
 </body>
 
