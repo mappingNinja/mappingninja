@@ -1,0 +1,274 @@
+Modern Design Overrides for MappingNinja:root {
+  --primary-color: #4f46e5;
+  /* Indigo 600 */
+  --secondary-color: #ec4899;
+  /* Pink 500 */
+  --accent-color: #8b5cf6;
+  /* Violet 500 */
+  --dark-bg: #0f172a;
+  --light-bg: #f8fafc;
+  --text-main: #334155;
+  --text-light: #64748b;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+body {
+  font-family: 'Outfit', 'Open Sans', sans-serif;
+  /* Try to use a more modern font if possible, else fallback */
+  background-color: var(--light-bg);
+  color: var(--text-main);
+}
+
+/* Typography Enhancements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Outfit', 'Nunito', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+/* Header */
+.header {
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 15px 0;
+}
+
+.header .logo span {
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.navbar a {
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.navbar .getstarted {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  border: none;
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+}
+
+.navbar .getstarted:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.hero h1 {
+  color: #1e293b;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero h2 {
+  color: var(--text-light);
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.hero .btn-get-started {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  border-radius: 50px;
+  padding: 15px 40px;
+  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.3);
+}
+
+.hero .btn-get-started:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(79, 70, 229, 0.4);
+}
+
+/* Section Headers */
+.section-header h2 {
+  color: var(--secondary-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-header p {
+  color: #1e293b;
+  font-size: 2.5rem;
+}
+
+/* Cards (Values, Services, Features) */
+.values .box,
+.service-box,
+.feature-box,
+.pricing .box {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  box-shadow: var(--glass-shadow);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+  position: relative;
+}
+
+.values .box:hover,
+.service-box:hover,
+.feature-box:hover,
+.pricing .box:hover {
+  transform: translateY(-10px);
+  background: #fff;
+  border-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 20px 40px rgba(31, 38, 135, 0.2);
+}
+
+/* Service Box Specifics */
+.service-box .icon {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
+  border-radius: 15px;
+  padding: 20px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.service-box:hover .icon {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: #fff;
+}
+
+.service-box h3 {
+  color: #1e293b;
+}
+
+.service-box p {
+  color: var(--text-light);
+}
+
+/* Pricing Section */
+.pricing .box {
+  border-top: 5px solid transparent;
+}
+
+.pricing .box h3 {
+  font-weight: 700;
+  color: #1e293b !important;
+}
+
+.pricing .box .price {
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+.pricing .btn-buy {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.pricing .btn-buy:hover {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  border-color: transparent;
+  color: #fff;
+}
+
+/* Testimonials */
+.testimonials .testimonial-item {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+}
+
+.testimonials .testimonial-item .profile img {
+  border: 4px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer (if existing, usually simple) */
+#footer {
+  background: #0f172a;
+}
+
+/* Animation Utilities */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.hero-img img {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Buttons General */
+.btn-read-more {
+  background: transparent !important;
+  color: var(--primary-color) !important;
+  box-shadow: none !important;
+  font-weight: 700 !important;
+}
+
+.btn-read-more:hover {
+  color: var(--secondary-color) !important;
+}
+
+/* Contact Form Tweaks (if visible on homepage) */
+.contact .php-email-form {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  border-radius: 50px;
+  padding: 12px 35px;
+}
